@@ -1,0 +1,6 @@
+framework module Pods_NibBinding_Tests {
+  umbrella header "Pods-NibBinding_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

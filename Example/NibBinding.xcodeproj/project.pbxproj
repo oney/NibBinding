@@ -15,6 +15,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		B3AB1172855C1B1977135E45 /* Pods_NibBinding_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B98D7FE1F86537C7E00BBA /* Pods_NibBinding_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		BF4532F01B85D7B900E579DF /* PhotoTemplate.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF4532EF1B85D7B900E579DF /* PhotoTemplate.xib */; };
+		BF4532F21B85D96700E579DF /* san-francisco-golden.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF4532F11B85D96700E579DF /* san-francisco-golden.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +42,12 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = NibBinding_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACE51AFB9204008FA782 /* NibBinding_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NibBinding_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		83D67B5CB5E0EE76ACAAEED7 /* Pods-NibBinding_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NibBinding_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-NibBinding_Example/Pods-NibBinding_Example.release.xcconfig"; sourceTree = "<group>"; };
+		BF4532EF1B85D7B900E579DF /* PhotoTemplate.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoTemplate.xib; sourceTree = "<group>"; };
+		BF4532F11B85D96700E579DF /* san-francisco-golden.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "san-francisco-golden.jpg"; sourceTree = "<group>"; };
 		E7B98D7FE1F86537C7E00BBA /* Pods_NibBinding_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NibBinding_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E928D69AFC2CB59F797C3E47 /* Pods-NibBinding_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NibBinding_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NibBinding_Tests/Pods-NibBinding_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FF4FEC6C066A78F5BD1FE979 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -85,7 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* NibBinding_Example.app */,
-				607FACE51AFB9204008FA782 /* Tests.xctest */,
+				607FACE51AFB9204008FA782 /* NibBinding_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,10 +97,12 @@
 		607FACD21AFB9204008FA782 /* Example for NibBinding */ = {
 			isa = PBXGroup;
 			children = (
+				BF4532EE1B85D78F00E579DF /* Binding Templates */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				BF4532F11B85D96700E579DF /* san-francisco-golden.jpg */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
@@ -146,6 +152,14 @@
 				11CA206BB9A3F0615D1B92D2 /* Pods_NibBinding_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF4532EE1B85D78F00E579DF /* Binding Templates */ = {
+			isa = PBXGroup;
+			children = (
+				BF4532EF1B85D7B900E579DF /* PhotoTemplate.xib */,
+			);
+			name = "Binding Templates";
 			sourceTree = "<group>";
 		};
 		F931616E7EAB9BC1B2F963AC /* Pods */ = {
@@ -200,7 +214,7 @@
 			);
 			name = NibBinding_Tests;
 			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* Tests.xctest */;
+			productReference = 607FACE51AFB9204008FA782 /* NibBinding_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -245,9 +259,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF4532F01B85D7B900E579DF /* PhotoTemplate.xib in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				BF4532F21B85D96700E579DF /* san-francisco-golden.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

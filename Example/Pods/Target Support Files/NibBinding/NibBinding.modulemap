@@ -1,0 +1,6 @@
+framework module NibBinding {
+  umbrella header "NibBinding-umbrella.h"
+
+  export *
+  module * { export * }
+}
