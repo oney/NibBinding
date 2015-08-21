@@ -22,7 +22,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 I love to use Interface Builder to build UI, and I really hate to build UI programmatically. However, sometime I still have to write some codes.
 
-For example, an image are added after users tap the button.
+For example, an image is added after users tap the button.
 
 ```swift
 var photo = UIImageView(image: UIImage(named: "san-francisco-golden.jpg"))
@@ -38,7 +38,7 @@ Now if you use NibBinding, you can do it like that.
 Create a Nib named "PhotoTemplate.xib", and edit like the following. After setting UI, mark views tag as 100 and 101.
 ![PhotoTemplate.xib](http://i.imgur.com/N2htZxc.jpg)
 
-And you can do it like this.
+And then, bind them together.
 ```swift
 import NibBinding
 
