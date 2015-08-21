@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func animate() {
-        photoTopLayoutConstraint?.constant = 200
+        photoTopLayoutConstraint?.constant += 30
         view.setNeedsUpdateConstraints()
         UIView.animateWithDuration(0.5, animations: {
             self.view.layoutIfNeeded()
