@@ -40,8 +40,10 @@ Create a Nib named "PhotoTemplate.xib", and edit like the following. After setti
 
 And you can do it like this.
 ```swift
+import NibBinding
+
 var photo = UIImageView(image: UIImage(named: "san-francisco-golden.jpg"))
-NibBinding.bind("PhotoTemplate", views: [100: self.view, 101: photo])
+NibBinding.bind("PhotoTemplate", views: [100: view, 101: photo])
 ```
 Done.
 
